@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "singularName": "artist",
+    "pluralName": "artists",
+    "displayName": "Artist",
+    "description": "Artists roster for the record label"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bio": {
+      "type": "text",
+      "required": true
+    },
+    "social": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.links"
+    },
+    "releases": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::release.release"
+    },
+    "genre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::genre.genre",
+      "inversedBy": "artists"
+    }
+  }
+}

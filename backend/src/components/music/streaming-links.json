@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_music_streaming_links",
+  "info": {
+    "displayName": "Streaming Links",
+    "description": "Music streaming platform links"
+  },
+  "options": {},
+  "attributes": {
+    "spotify": {
+      "type": "string"
+    },
+    "appleMusic": {
+      "type": "string"
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "bandcamp": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    }
+  }
+}

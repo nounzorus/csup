@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_music_tracks",
+  "info": {
+    "displayName": "Track",
+    "description": "Music track information"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "trackNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "audioFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["audios"]
+    },
+    "previewUrl": {
+      "type": "string"
+    }
+  }
+}
