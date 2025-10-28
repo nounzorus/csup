@@ -1,7 +1,12 @@
 node_modules
 dist
 .git
+.gitignore
 .env
 backend
+.vscode
+.docker
 strapi-config
 *.log
+
+
