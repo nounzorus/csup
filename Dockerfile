@@ -11,7 +11,6 @@ RUN npm install
 # Copie le reste du code (y compris .env* pour Vite au build)
 # ⚠️ Assure-toi que .dockerignore N'EXCLUT PAS .env si tu en as besoin au build.
 COPY . .
-COPY .env .env
 
 # Build Vite (les variables VITE_* du .env sont injectées ici)
 RUN npm run build
