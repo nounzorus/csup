@@ -27,7 +27,7 @@ RUN \
 FROM nginx:1.27-alpine
 
 # conf nginx optimisée SPA + cache long sur assets
-COPY /app/.docker/nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 # copie le build
 COPY --from=build /app/dist/ /usr/share/nginx/html/
