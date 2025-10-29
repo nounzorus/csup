@@ -1,4 +1,4 @@
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://strapi.guilbaud-gym.fr';
+const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://front.guilbaud-gym.fr/api';
 
 export interface StrapiImage {
   id: number;
